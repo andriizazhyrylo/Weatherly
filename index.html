@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Прогноз погоди</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>Погода</h1>
+
+    <div class="search-box">
+      <input type="text" id="city-input" placeholder="Введіть місто..." />
+      <button id="search-btn">Пошук</button>
+    </div>
+
+    <div class="weather-box" id="weather-box" style="display: none;">
+      <img id="weather-icon" src="" alt="Погода" />
+      <h2 id="temperature"></h2>
+      <p id="description"></p>
+      <p id="wind"></p>
+    </div>
+
+    <div class="not-found" id="not-found" style="display: none;">
+      <p>Місто не знайдено 😞</p>
+      <img src="404 Error-rafiki.png" alt="Not found" style="width: 100%; max-width: 250px; margin-top: 10px;" />
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
